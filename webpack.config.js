@@ -2,7 +2,7 @@ const cldr = require('cldr');
 const _ = require('lodash');
 
 const localeIdList = cldr.localeIds;
-const delimiterDatadelimiterList = localeIdList.map((localeId)=> {
+const delimiterList = localeIdList.map((localeId)=> {
   const delimiter = cldr.extractDelimiters(localeId);
   return { localeId, delimiter }
 });
