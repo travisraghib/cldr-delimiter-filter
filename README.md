@@ -7,4 +7,4 @@
 ###Getting Started###
 1. npm i 
 2. npm start
-3. brower => localhost:8080
+3. browser => localhost:8080
