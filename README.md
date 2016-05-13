@@ -1,25 +1,10 @@
-# ReduxSimpleStarter
+# CLDR Delimiter filters
 
-Interested in learning [Redux](https://www.udemy.com/react-redux/)?
+###Prereq###
+1. node 6.1.0 (I use n to manage node versions)
+2. npm 3.8.9 (npm install npm -g)
 
 ###Getting Started###
-
-There are two methods for getting started with this repo.
-
-####Familiar with Git?#####
-Checkout this repo, install depdencies, then start the gulp process with the following:
-
-```
-	> git clone git@github.com:StephenGrider/ReduxSimpleStarter.git
-	> cd ReduxSimpleStarter
-	> npm install
-	> npm start
-```
-
-####Not Familiar with Git?#####
-Click [here](https://github.com/StephenGrider/ReactStarter/releases) then download the .zip file.  Extract the contents of the zip file, then open your terminal, change to the project directory, and:
-
-```
-	> npm install
-	> npm start
-```
+1. npm i 
+2. npm start
+3. brower => localhost:8080
