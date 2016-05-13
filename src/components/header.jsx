@@ -1,13 +1,13 @@
-import React, { Component } from 'react';
+import React from 'react';
 
-export default class SearchBar extends Component{
-  render (){
+const Header = (props) => {
     return (
       <div className="col-xs-12">
         <div className="jumbotron">
-          <h1>{this.props.message || 'CLDR Delimiter Filters'}</h1>
+          <h1>{props.message || 'CLDR Delimiter Filters'}</h1>
         </div>
       </div>
     );
-  }
 }
+
+export default Header;
