@@ -1,5 +1,4 @@
 const cldr = require('cldr');
-const _ = require('lodash');
 
 const localeIdList = cldr.localeIds;
 const delimiterList = localeIdList.map((localeId)=> {
@@ -30,7 +29,7 @@ module.exports = {
     contentBase       : './',
     proxy             : {
       '/api/delimiters/': {
-        bypass: function(req, res, proxyOptions) {
+        bypass: function(req, res) {
           return res.json([...delimiterList])
         }
       }
