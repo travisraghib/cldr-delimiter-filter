@@ -1,23 +1,41 @@
+const cldr = require('cldr');
+const _ = require('lodash');
+
+const localeIdList = cldr.localeIds;
+const delimiterDatadelimiterList = localeIdList.map((localeId)=> {
+  const delimiter = cldr.extractDelimiters(localeId);
+  return { localeId, delimiter }
+});
+
 module.exports = {
-  entry: [
+  entry    : [
     './src/index.js'
   ],
-  output: {
-    path: __dirname,
+  output   : {
+    path      : __dirname,
     publicPath: '/',
-    filename: 'bundle.js'
+    filename  : 'bundle.js'
   },
-  module: {
+  module   : {
     loaders: [{
       exclude: /node_modules/,
-      loader: 'babel'
+      loader : 'babel'
     }]
   },
-  resolve: {
+  resolve  : {
     extensions: ['', '.js', '.jsx']
   },
   devServer: {
     historyApiFallback: true,
-    contentBase: './'
+    contentBase       : './',
+    proxy             : {
+      '/api/delimiters/': {
+        target: 'https://other-server.example.com',
+        secure: false,
+        bypass: function(req, res, proxyOptions) {
+          return res.json([...delimiterList])
+        }
+      }
+    }
   }
 };
