@@ -5,6 +5,7 @@
 2. npm 3.8.9 (npm install npm -g)
 
 ###Getting Started###
-1. npm i 
-2. npm start
-3. browser => localhost:8080
+1. git clone https://github.com/travisraghib/cldr-delimiter-filter.git 
+2. npm i 
+3. npm start
+4. browser => localhost:8080
