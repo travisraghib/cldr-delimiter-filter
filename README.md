@@ -2,9 +2,9 @@
 ##written with react + redux + wepback
 ###Prereq###
 1. node 6.1.0 (I use n to manage node versions)
-2.```n latest```
+```n latest```
 2. npm 3.8.9
-3. ```npm install npm -g```
+```npm install npm -g```
 
 ###Getting Started###
 1. git clone https://github.com/travisraghib/cldr-delimiter-filter.git 
